@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+TrackFlow - Music Dashboard
 
-## Getting Started
+TrackFlow is a modern music dashboard where users can **login, upload, search, and explore tracks**.  
+It features a clean UI, a responsive layout, and smooth navigation.
+Setup Instructions
 
-First, run the development server:
+1. Clone the repository
+   ```bash
+   git clone https://github.com/Nileshstack/TuneDeck.git
+   cd trackflow
+   npm install
+   npm run dev
+Open http://localhost:3000 in your browser.
+  
+**🌐 Live Website Link :-** https://tune-deck.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Approach**
+1) Used Next.js (App Router) for building a fast and scalable frontend.
+  
+2) Implemented modular components like Navbar, SearchBar, TrackTable, and ThemeSwitcher.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3) Stored session data using localStorage to manage login/logout state.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+4) Designed UI with CSS Modules + Glassmorphism + Gradient backgrounds for a modern look.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+5) Added responsive design using @media queries for mobile and tablets.
 
-## Learn More
+6) Created a mock API endpoint (/api/tracks) to fetch and display track data dynamically.
 
-To learn more about Next.js, take a look at the following resources:
+**Features Completed**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1) Authentication: Simple login/logout with session storage.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2) Dashboard: Displays all uploaded tracks in a stylish table.
 
-## Deploy on Vercel
+3) Search Functionality: Search tracks by title or artist.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4) Upload Page: Add new tracks with title, artist, release date, and genre.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5) Track Details Page: View detailed info about a specific track.
+
+6) Responsive UI: Works across desktop, tablet, and mobile screens.
+
+7) Modern Design: Gradient backgrounds, blur effects, hover states.
+
+
+
