@@ -1,0 +1,92 @@
+.table {
+  width: 100%;
+  border-collapse: separate; 
+  border-spacing: 0 12px;    
+  border-radius: 12px;
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+  margin-top: 2rem;
+}
+
+.th {
+  padding: 1.2rem 1.5rem;   
+  text-align: left;
+  color: #fff;
+  font-size: 1rem;
+  border-bottom: none;   
+}
+.td{
+   padding: 1.2rem 1.5rem;   
+  text-align: left;
+  color: #fff;
+  font-size: 1rem;
+  border-bottom: none; 
+ 
+}
+
+.th {
+  background: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tr {
+  background: rgba(255, 255, 255, 0.08); 
+  border-radius: 8px;
+}
+
+tr:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transition: background 0.3s ease;
+}
+
+.xxx {
+  color: rgb(92, 92, 251);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor:pointer;
+  margin-left: 5%;
+}
+
+.xxx:hover {
+  text-decoration: underline;
+  color: #2a8bfa;
+}
+
+@media (max-width: 900px) {
+  .table {
+    font-size: 0.98rem;
+    border-radius: 10px;
+  }
+  .th, .td {
+    padding: 0.8rem 0.7rem;
+    font-size: 0.98rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .table {
+    font-size: 0.93rem;
+    border-radius: 7px;
+    margin-top: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .th, .td {
+    padding: 0.6rem 0.4rem;
+    font-size: 0.93rem;
+  }
+  .xxx {
+    margin-left: 0;
+    display: inline-block;
+  }
+}

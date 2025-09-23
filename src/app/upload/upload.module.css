@@ -1,0 +1,102 @@
+
+.container {
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.form {
+  background: rgba(255, 255, 255, 0.15); 
+  backdrop-filter: blur(12px);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 360px;
+  min-width: 0;
+  color: #fff;
+}
+
+
+.form h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  text-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+}
+
+
+.input {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1rem;
+  background-color: black;
+  color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.input:focus {
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+}
+
+
+.button {
+  background: #0070f3;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.button:hover {
+  background: #005bb5;
+  transform: translateY(-2px);
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+  .form {
+    padding: 1.2rem;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  }
+  .form h2 {
+    font-size: 1.3rem;
+  }
+  .input, .button {
+    font-size: 0.95rem;
+    padding: 0.65rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .form {
+    max-width: 420px;
+    padding: 2.5rem;
+  }
+  .form h2 {
+    font-size: 2rem;
+  }
+}
