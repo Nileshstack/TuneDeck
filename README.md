@@ -7,7 +7,7 @@ Setup Instructions
 1. Clone the repository
    ```bash
    git clone https://github.com/Nileshstack/TuneDeck.git
-   cd trackflow
+   cd TuneDeck
    npm install
    npm run dev
 Open http://localhost:3000 in your browser.
